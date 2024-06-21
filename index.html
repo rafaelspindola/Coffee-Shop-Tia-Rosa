@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Tia Rosa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="logo">Coffee Shop Tia Rosa</div>
+        <nav>
+            <ul>
+                <li><button onclick="showHome()">Home</button></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showProducts('cafes')">Cafés</a>
+                        <a href="#" onclick="showProducts('cookies')">Cookies</a>
+                        <a href="#" onclick="showProducts('bolos')">Bolos</a>
+                    </div>
+                </li>
+                <li><button onclick="showAboutUs()">Sobre Nós</button></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <input type="text" placeholder="Search...">
+            <button class="cart-btn"><i class="material-icons">shopping_cart</i></button>
+        </div>
+    </header>
+    <main class="main-content">
+        <div id="home">
+            <div id="home-products" class="products-container"></div>
+        </div>
+        <div id="products" class="products-container" style="display: none;"></div>
+        <div id="product-info" class="product-info" style="display: none;"></div>
+        <div id="about-us" style="display: none;">
+            <div class="card">
+                <h1>Sobre Nós</h1>
+                <p>No Coffee Shop Tia Rosa, estamos comprometidos com a constante melhoria da qualidade de nossos serviços e produtos. Reconhecemos que para alcançar esse objetivo é essencial investir em tecnologia, mesmo diante do desafio de uma equipe com variados perfis de formação, mas que nem sempre estão alinhados com as demandas tecnológicas atuais. O café e o acesso à internet são os produtos mais solicitados em nosso estabelecimento.</p>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coffee Shop Tia Rosa. Todos os direitos reservados.</p>
+        <p>Contato: coffeeshoptia@gmail.com | Whatsapp: (61) 987467582</p>
+        <p>Endereço: Rua das Flores, 1234, Bairro Jardim Primavera, Bela Vista, SP</p>
+        <p>CEP: 12345-678</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
